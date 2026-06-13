@@ -8,7 +8,7 @@ The final consolidated model calculates total customer spend values, average bas
 
 ## 📊 Production Data Asset Output
 > [!IMPORTANT]
-> IMPORTANT :- RAW DATA(Customer_360_project) AND OBTAINED AND FILTER ARE IN SEPARATE ZIP FILES(Customer_360_project_answers) DOWNLOAD IT TO VIEW COMPLETE FILE.
+> IMPORTANT :- RAW DATA(Customer_360_project) AND OBTAINED\FILTER DATA ARE IN SEPARATE ZIP FILES(Customer_360_project_answers). DOWNLOAD IT TO VIEW COMPLETE FILE.
 
 ---
 
