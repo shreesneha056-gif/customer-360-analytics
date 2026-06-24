@@ -1,34 +1,59 @@
-# Data_analysis----Customer_360_project
-## 📝 Project Description
-This analytics solution creates a unified **Customer 360 Profile (Single Customer View)** from decentralized relational e-commerce tables. Using **Python**, the pipeline integrates disparate transactional ledgers, geolocation indices, shipping logs, payment options, and consumer feedback reviews to engineer high-signal behavioral markers.
+# 👥 Customer 360 Analytics — Unified Customer Profile
 
-The final consolidated model calculates total customer spend values, average basket sizes, profit margins, categorical reliance flags, installment behaviors, and churn patterns. The engineered features isolate elite customer segments and predict retention liabilities.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Analytics](https://img.shields.io/badge/Analytics-Business%20Intelligence-orange?style=flat-square)
 
----
-
-## 📊 Production Data Asset Output
-> [!IMPORTANT]
-> IMPORTANT :- RAW DATA(Customer_360_project) AND OBTAINED\FILTER DATA ARE IN SEPARATE ZIP FILES(Customer_360_project_answers). DOWNLOAD IT TO VIEW COMPLETE FILE.
+> Builds a unified Single Customer View (SCV) by integrating transactional, behavioral, and demographic data to derive high-signal business insights.
 
 ---
 
-## 📐 Data Integration & Feature Engineering Architecture
+## 📌 Problem Statement
+Modern businesses store customer data across multiple disconnected systems — orders, payments, shipping, reviews. This project consolidates all sources into a single Customer 360 profile to enable better targeting, retention, and segmentation strategies.
 
-The execution steps compile raw transactional files down to unified customer behavioral states:
+## 🎯 Key Outputs
+| Feature Engineered | Description |
+|--------------------|-------------|
+| Total Customer Spend | Lifetime spend per customer |
+| Average Basket Size | Mean order value |
+| Profit Margin | Revenue vs cost analysis |
+| Churn Risk Flag | Customers at risk of leaving |
+| Payment Behavior | Installment vs full payment patterns |
+| Elite Segment | High-value customer identification |
 
-| Source File Component | Field Dimensions Extracted | Engineered Behavioral Feature Target |
-| :--- | :--- | :--- |
-| 🏷️ **CUSTOMERS.csv** | `customer_id`, `zip_code`, `state` | Core Demographic Mapping Index |
-| 📦 **ORDERS.csv** | Timestamp records, Delivery log statuses | Recency Metrics & Churn Status flags |
-| 💸 **ORDER_ITEMS.csv** | Price rates, Freight values, Seller keys | `total_act_amount`, `avg_basket_value` |
-| 💳 **ORDER_PAYMENTS.csv** | Payment forms, Installment frequencies | `decile_payment_installments` scoring |
-| ⭐ **ORDER_REVIEW_RATINGS.csv**| Numeric scores ($1 \rightarrow 5$) | `review_flag` tracking customer satisfaction |
-| 🗃️ **PRODUCTS.csv** | Category tags (`Bed_Bath_Table`, `Toys`) | Categorical split margins (`cat_pur_...`) |
+## 🛠️ Tech Stack
+- **Language:** Python
+- **Data Processing:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook
+
+## 📂 Project Structure
+```
+customer-360-analytics/
+├── Customer_360_Project/
+│   ├── Customer_360_Project.zip   # Raw data & notebooks
+│   └── Customer_360_project_answers.gz
+└── README.md
+```
+
+## 🚀 How to Run
+```bash
+# 1. Clone the repo
+git clone https://github.com/shreesneha056-gif/customer-360-analytics.git
+cd customer-360-analytics
+
+# 2. Install dependencies
+pip install pandas numpy matplotlib seaborn jupyter
+
+# 3. Extract data and launch Jupyter
+jupyter notebook
+```
+
+## 📊 Pipeline Overview
+1. **Data Integration** — Merge transactional, shipping, payment, and review tables
+2. **Feature Engineering** — Derive spend, basket size, churn indicators
+3. **Customer Segmentation** — Identify elite vs at-risk segments
+4. **Business Insights** — Actionable recommendations for retention
 
 ---
-
-## 🔍 Core Engineered Consumer Features
-
-* **💰 Value
-
-  
+📫 [Connect on LinkedIn](https://www.linkedin.com/in/sneha-shree-mu/) | [Portfolio](https://shreesneha056-gif.github.io/portfolio_website/)
